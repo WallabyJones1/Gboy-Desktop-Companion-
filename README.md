@@ -12,7 +12,7 @@ Gboy is a native macOS desktop companion. He lives on your screen, reacts to the
 
 ## Animation Preview
 
-These are real loops pulled from the companion's shipped sprite sheets, with the top row focused on mood and emotion.
+These are real loops pulled from the same runtime-resolved sprite sheets the bundled app prefers when it launches.
 
 <table>
   <tr>
@@ -68,8 +68,8 @@ These are the exact sheet-style assets used to drive the companion animations.
       <code>bored_mastered_sheet.png</code>
     </td>
     <td align="center">
-      <img src="apps/macos-companion/Assets/Sprites/smoke_drift_sheet.png" alt="Smoke drift sprite sheet" width="256"><br>
-      <code>smoke_drift_sheet.png</code>
+      <img src="apps/macos-companion/Assets/Sprites/smoke_drift_mastered_sheet.png" alt="Smoke drift sprite sheet" width="256"><br>
+      <code>smoke_drift_mastered_sheet.png</code>
     </td>
     <td align="center">
       <img src="apps/macos-companion/Assets/Sprites/blanket_nest_extended_sheet.png" alt="Blanket nest sprite sheet" width="256"><br>
