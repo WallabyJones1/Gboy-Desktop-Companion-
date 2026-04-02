@@ -162,7 +162,7 @@ Editable AI files are created on first launch in:
 
 ## Repo Layout
 
-The current build uses art from `apps/`. The `art/` folder is legacy archive material and is not the source of truth for the desktop companion.
+The current build uses art from `apps/`.
 
 ```text
 Gboy/
@@ -172,7 +172,6 @@ Gboy/
 ├── .github/
 │   ├── readme/             # Landing-page preview GIFs
 │   └── workflows/          # Release automation
-└── art/                    # Legacy archive, not used by the build
 ```
 
 ## Working On It
