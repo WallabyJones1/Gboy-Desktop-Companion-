@@ -12,7 +12,7 @@ Gboy is a native macOS desktop companion. He lives on your screen, reacts to the
 
 ## Animation Preview
 
-These are real loops pulled from the same runtime-resolved sprite sheets the bundled app prefers when it launches.
+These are real loops generated from the exact clip sheet files referenced by the app.
 
 <table>
   <tr>
@@ -50,30 +50,30 @@ These are the exact sheet-style assets used to drive the companion animations.
 <table>
   <tr>
     <td align="center">
-      <img src="apps/macos-companion/Assets/Sprites/happy_mastered_sheet.png" alt="Happy sprite sheet" width="256"><br>
-      <code>happy_mastered_sheet.png</code>
+      <img src="apps/godot-game/assets/sprites/player/happy_sheet.png" alt="Happy sprite sheet" width="192"><br>
+      <code>happy_sheet.png</code>
     </td>
     <td align="center">
-      <img src="apps/macos-companion/Assets/Sprites/angry_mastered_sheet.png" alt="Angry sprite sheet" width="256"><br>
-      <code>angry_mastered_sheet.png</code>
+      <img src="apps/godot-game/assets/sprites/player/angry_sheet.png" alt="Angry sprite sheet" width="192"><br>
+      <code>angry_sheet.png</code>
     </td>
     <td align="center">
-      <img src="apps/macos-companion/Assets/Sprites/confused_mastered_sheet.png" alt="Confused sprite sheet" width="256"><br>
-      <code>confused_mastered_sheet.png</code>
+      <img src="apps/macos-companion/Assets/Sprites/confused_sheet.png" alt="Confused sprite sheet" width="192"><br>
+      <code>confused_sheet.png</code>
     </td>
   </tr>
   <tr>
     <td align="center">
-      <img src="apps/macos-companion/Assets/Sprites/bored_mastered_sheet.png" alt="Bored sprite sheet" width="256"><br>
-      <code>bored_mastered_sheet.png</code>
+      <img src="apps/macos-companion/Assets/Sprites/bored_sheet.png" alt="Bored sprite sheet" width="192"><br>
+      <code>bored_sheet.png</code>
     </td>
     <td align="center">
-      <img src="apps/macos-companion/Assets/Sprites/smoke_drift_mastered_sheet.png" alt="Smoke drift sprite sheet" width="256"><br>
-      <code>smoke_drift_mastered_sheet.png</code>
+      <img src="apps/macos-companion/Assets/Sprites/smoke_drift_sheet.png" alt="Smoke drift sprite sheet" width="256"><br>
+      <code>smoke_drift_sheet.png</code>
     </td>
     <td align="center">
-      <img src="apps/macos-companion/Assets/Sprites/blanket_nest_extended_sheet.png" alt="Blanket nest sprite sheet" width="256"><br>
-      <code>blanket_nest_extended_sheet.png</code>
+      <img src="apps/godot-game/assets/sprites/player/blanket_nest_sheet.png" alt="Blanket nest sprite sheet" width="192"><br>
+      <code>blanket_nest_sheet.png</code>
     </td>
   </tr>
 </table>
