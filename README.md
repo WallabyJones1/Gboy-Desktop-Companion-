@@ -4,27 +4,41 @@ Gboy is a native macOS desktop companion. He lives on your screen, reacts to the
 
 ![Gboy reference](art/reference/gboy_reference.png)
 
+## Links
+
+- [Neuki.wiki](https://neuko.wiki) for lore, transmissions, and worldbuilding
+- [Gboy.special](https://gboyspecial.com) for the dedicated Gboy image experience
+- [NeukoAi](https://neuko.ai) for the wider Neuko AI portal
+
 ## Animation Preview
 
-These are real loops pulled from the companion's shipped sprite sheets.
+These are real loops pulled from the companion's shipped sprite sheets, with the top row focused on mood and emotion.
 
 <table>
   <tr>
     <td align="center">
-      <img src="art/reference/previews/gboy-wave.gif" alt="Gboy wave animation" width="128"><br>
-      <strong>Wave</strong>
+      <img src="art/reference/previews/gboy-happy.gif" alt="Gboy happy animation" width="128"><br>
+      <strong>Happy</strong>
     </td>
     <td align="center">
-      <img src="art/reference/previews/gboy-glitch.gif" alt="Gboy glitch animation" width="128"><br>
-      <strong>Glitch</strong>
+      <img src="art/reference/previews/gboy-angry.gif" alt="Gboy angry animation" width="128"><br>
+      <strong>Angry</strong>
     </td>
     <td align="center">
-      <img src="art/reference/previews/gboy-zine-read.gif" alt="Gboy reading animation" width="128"><br>
-      <strong>Zine Read</strong>
+      <img src="art/reference/previews/gboy-confused.gif" alt="Gboy confused animation" width="128"><br>
+      <strong>Confused</strong>
     </td>
     <td align="center">
-      <img src="art/reference/previews/gboy-desk-noodles.gif" alt="Gboy desk noodles animation" width="128"><br>
-      <strong>Desk Noodles</strong>
+      <img src="art/reference/previews/gboy-bored.gif" alt="Gboy bored animation" width="128"><br>
+      <strong>Bored</strong>
+    </td>
+    <td align="center">
+      <img src="art/reference/previews/gboy-smoke-drift.gif" alt="Gboy smoke drift animation" width="128"><br>
+      <strong>Smoke Drift</strong>
+    </td>
+    <td align="center">
+      <img src="art/reference/previews/gboy-blanket-nest.gif" alt="Gboy blanket nest animation" width="128"><br>
+      <strong>Blanket Nest</strong>
     </td>
   </tr>
 </table>
@@ -36,22 +50,30 @@ These are the exact sheet-style assets used to drive the companion animations.
 <table>
   <tr>
     <td align="center">
-      <img src="apps/macos-companion/Assets/Sprites/wave_sheet.png" alt="Wave sprite sheet" width="192"><br>
-      <code>wave_sheet.png</code>
+      <img src="apps/macos-companion/Assets/Sprites/happy_mastered_sheet.png" alt="Happy sprite sheet" width="256"><br>
+      <code>happy_mastered_sheet.png</code>
     </td>
     <td align="center">
-      <img src="apps/macos-companion/Assets/Sprites/glitch_sheet.png" alt="Glitch sprite sheet" width="192"><br>
-      <code>glitch_sheet.png</code>
+      <img src="apps/macos-companion/Assets/Sprites/angry_mastered_sheet.png" alt="Angry sprite sheet" width="256"><br>
+      <code>angry_mastered_sheet.png</code>
+    </td>
+    <td align="center">
+      <img src="apps/macos-companion/Assets/Sprites/confused_mastered_sheet.png" alt="Confused sprite sheet" width="256"><br>
+      <code>confused_mastered_sheet.png</code>
     </td>
   </tr>
   <tr>
     <td align="center">
-      <img src="apps/macos-companion/Assets/Sprites/zine_read_sheet.png" alt="Zine read sprite sheet" width="192"><br>
-      <code>zine_read_sheet.png</code>
+      <img src="apps/macos-companion/Assets/Sprites/bored_mastered_sheet.png" alt="Bored sprite sheet" width="256"><br>
+      <code>bored_mastered_sheet.png</code>
     </td>
     <td align="center">
-      <img src="apps/macos-companion/Assets/Sprites/desk_noodles_smooth_sheet.png" alt="Desk noodles sprite sheet" width="384"><br>
-      <code>desk_noodles_smooth_sheet.png</code>
+      <img src="apps/macos-companion/Assets/Sprites/smoke_drift_sheet.png" alt="Smoke drift sprite sheet" width="256"><br>
+      <code>smoke_drift_sheet.png</code>
+    </td>
+    <td align="center">
+      <img src="apps/macos-companion/Assets/Sprites/blanket_nest_extended_sheet.png" alt="Blanket nest sprite sheet" width="256"><br>
+      <code>blanket_nest_extended_sheet.png</code>
     </td>
   </tr>
 </table>
