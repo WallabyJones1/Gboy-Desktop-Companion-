@@ -1,0 +1,26 @@
+{
+  "kind": "ollama",
+  "displayName": "Ollama Local",
+  "executablePath": "/usr/bin/env",
+  "workingDirectory": "",
+  "argumentsTemplate": [
+    "ollama",
+    "run",
+    "{{ollama_model}}",
+    "--format",
+    "json",
+    "--hidethinking",
+    "{{prompt}}"
+  ],
+  "environment": {},
+  "modelPath": "",
+  "ollamaModel": "qwen2.5:3b-instruct",
+  "temperature": 0.8,
+  "maxTokens": 160,
+  "contextSize": 4096,
+  "threads": 2,
+  "apiBaseURL": null,
+  "apiPath": null,
+  "apiKeyEnvVar": null,
+  "apiModel": null
+}

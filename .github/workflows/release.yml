@@ -1,0 +1,51 @@
+name: Build & Release
+
+# Triggers on any tag that looks like v1.2.3
+on:
+  push:
+    tags:
+      - "v*.*.*"
+
+jobs:
+  build:
+    name: Build macOS app
+    runs-on: macos-14        # Apple Silicon runner (free tier)
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Xcode command-line tools (if needed)
+        run: xcode-select --print-path || sudo xcode-select --install
+
+      - name: Build
+        run: |
+          cd apps/macos-companion
+          chmod +x build_app.sh
+          ./build_app.sh
+
+      - name: Zip the app
+        run: |
+          cd apps/macos-companion/build
+          zip -r "Gboy.Companion.zip" "Gboy Companion Native.app"
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            apps/macos-companion/build/Gboy.Companion.zip
+            apps/macos-companion/build/Gboy.Companion.Icon.png
+          generate_release_notes: true
+          body: |
+            ## Install
+
+            1. Download `Gboy.Companion.zip` from Assets below
+            2. Unzip and drag `Gboy Companion Native.app` to your Applications folder
+            3. First launch: right-click the app → Open, then click Open again
+               (or run `xattr -cr "/Applications/Gboy Companion Native.app"` in Terminal)
+
+            `Gboy.Companion.Icon.png` is the sprite-derived app icon used in the bundled macOS app.
+
+            Requires macOS 13 Ventura or later.
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

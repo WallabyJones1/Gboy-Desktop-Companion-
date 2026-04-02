@@ -1,0 +1,32 @@
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# Build output
+apps/macos-companion/build/
+apps/godot-game/build/
+*.app
+*.zip
+
+# Godot
+apps/godot-game/.godot/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Blender backups
+*.blend1
+*.blend2
+
+# Generated extended sprite sheets (created by build_app.sh)
+apps/macos-companion/Assets/Sprites/*_extended_sheet.png
+
+# Local AI credentials / overrides
+.env
+.env.*
+apps/macos-companion/Assets/AI/*.local.json

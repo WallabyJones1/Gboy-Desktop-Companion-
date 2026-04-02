@@ -1,0 +1,18 @@
+{
+  "kind": "openai_compatible",
+  "displayName": "OpenAI API",
+  "executablePath": null,
+  "workingDirectory": "",
+  "argumentsTemplate": null,
+  "environment": {},
+  "modelPath": "",
+  "ollamaModel": "",
+  "temperature": 0.7,
+  "maxTokens": 180,
+  "contextSize": 0,
+  "threads": 0,
+  "apiBaseURL": "https://api.openai.com/v1",
+  "apiPath": "/chat/completions",
+  "apiKeyEnvVar": "OPENAI_API_KEY",
+  "apiModel": "gpt-4o-mini"
+}

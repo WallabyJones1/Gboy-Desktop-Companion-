@@ -1,0 +1,18 @@
+{
+  "kind": "openai_compatible",
+  "displayName": "OpenAI-Compatible API",
+  "executablePath": null,
+  "workingDirectory": "",
+  "argumentsTemplate": null,
+  "environment": {},
+  "modelPath": "",
+  "ollamaModel": "",
+  "temperature": 0.7,
+  "maxTokens": 180,
+  "contextSize": 0,
+  "threads": 0,
+  "apiBaseURL": "https://your-api-host/v1",
+  "apiPath": "/chat/completions",
+  "apiKeyEnvVar": "GBOY_API_KEY",
+  "apiModel": "your-model-name"
+}

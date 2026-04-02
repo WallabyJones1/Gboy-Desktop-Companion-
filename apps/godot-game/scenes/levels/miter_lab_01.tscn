@@ -1,0 +1,77 @@
+[gd_scene load_steps=6 format=3]
+
+[ext_resource type="Script" path="res://scripts/levels/base_level.gd" id="1"]
+[ext_resource type="PackedScene" path="res://scenes/player.tscn" id="2"]
+[ext_resource type="PackedScene" path="res://scenes/ui/hud.tscn" id="3"]
+
+[sub_resource type="RectangleShape2D" id="1"]
+size = Vector2(320, 24)
+
+[sub_resource type="RectangleShape2D" id="2"]
+size = Vector2(72, 16)
+
+[sub_resource type="RectangleShape2D" id="3"]
+size = Vector2(56, 16)
+
+[node name="MiterLab01" type="Node2D"]
+script = ExtResource("1")
+level_id = "miter_lab_01"
+level_name = "MITER Lab // Escape Test Chamber"
+
+[node name="Backdrop" type="Polygon2D" parent="."]
+color = Color(0.06, 0.07, 0.12, 1)
+polygon = PackedVector2Array(-320, -180, 320, -180, 320, 220, -320, 220)
+
+[node name="PlayerSpawn" type="Marker2D" parent="."]
+position = Vector2(-120, -10)
+
+[node name="Player" parent="." instance=ExtResource("2")]
+
+[node name="Ground" type="StaticBody2D" parent="."]
+collision_layer = 2
+position = Vector2(0, 44)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ground"]
+shape = SubResource("1")
+
+[node name="GroundVisual" type="Polygon2D" parent="Ground"]
+color = Color(0.22, 0.25, 0.32, 1)
+polygon = PackedVector2Array(-160, -12, 160, -12, 160, 12, -160, 12)
+
+[node name="PlatformA" type="StaticBody2D" parent="."]
+collision_layer = 2
+position = Vector2(20, -4)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlatformA"]
+shape = SubResource("2")
+
+[node name="PlatformVisual" type="Polygon2D" parent="PlatformA"]
+color = Color(0.33, 0.14, 0.16, 1)
+polygon = PackedVector2Array(-36, -8, 36, -8, 36, 8, -36, 8)
+
+[node name="PlatformB" type="StaticBody2D" parent="."]
+collision_layer = 2
+position = Vector2(118, -42)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlatformB"]
+shape = SubResource("3")
+
+[node name="PlatformVisual" type="Polygon2D" parent="PlatformB"]
+color = Color(0.17, 0.32, 0.29, 1)
+polygon = PackedVector2Array(-28, -8, 28, -8, 28, 8, -28, 8)
+
+[node name="HUD" parent="." instance=ExtResource("3")]
+
+[node name="InstructionLayer" type="CanvasLayer" parent="."]
+layer = 5
+
+[node name="Instructions" type="Label" parent="InstructionLayer"]
+offset_left = 10.0
+offset_top = 174.0
+offset_right = 182.0
+offset_bottom = 210.0
+theme_override_colors/font_color = Color(0.8, 0.86, 0.92, 1)
+theme_override_font_sizes/font_size = 8
+text = "A/D move  Space jump  J attack  K dash  L psi\nBootstrap room for debugging scene flow."
+
+[node name="CameraLimits" type="Node2D" parent="."]
