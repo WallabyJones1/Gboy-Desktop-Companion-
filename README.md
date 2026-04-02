@@ -2,7 +2,7 @@
 
 Gboy is a native macOS desktop companion. He lives on your screen, reacts to the cursor, runs a large animation loop, and now ships from a cleaner repo layout that is easier to publish on GitHub and easier to build on any recent Mac.
 
-![Gboy reference](art/reference/gboy_reference.png)
+![Gboy preview](apps/godot-game/assets/sprites/player/gboy_preview.png)
 
 ## Links
 
@@ -17,27 +17,27 @@ These are real loops pulled from the companion's shipped sprite sheets, with the
 <table>
   <tr>
     <td align="center">
-      <img src="art/reference/previews/gboy-happy.gif" alt="Gboy happy animation" width="128"><br>
+      <img src=".github/readme/gboy-happy.gif" alt="Gboy happy animation" width="128"><br>
       <strong>Happy</strong>
     </td>
     <td align="center">
-      <img src="art/reference/previews/gboy-angry.gif" alt="Gboy angry animation" width="128"><br>
+      <img src=".github/readme/gboy-angry.gif" alt="Gboy angry animation" width="128"><br>
       <strong>Angry</strong>
     </td>
     <td align="center">
-      <img src="art/reference/previews/gboy-confused.gif" alt="Gboy confused animation" width="128"><br>
+      <img src=".github/readme/gboy-confused.gif" alt="Gboy confused animation" width="128"><br>
       <strong>Confused</strong>
     </td>
     <td align="center">
-      <img src="art/reference/previews/gboy-bored.gif" alt="Gboy bored animation" width="128"><br>
+      <img src=".github/readme/gboy-bored.gif" alt="Gboy bored animation" width="128"><br>
       <strong>Bored</strong>
     </td>
     <td align="center">
-      <img src="art/reference/previews/gboy-smoke-drift.gif" alt="Gboy smoke drift animation" width="128"><br>
+      <img src=".github/readme/gboy-smoke-drift.gif" alt="Gboy smoke drift animation" width="128"><br>
       <strong>Smoke Drift</strong>
     </td>
     <td align="center">
-      <img src="art/reference/previews/gboy-blanket-nest.gif" alt="Gboy blanket nest animation" width="128"><br>
+      <img src=".github/readme/gboy-blanket-nest.gif" alt="Gboy blanket nest animation" width="128"><br>
       <strong>Blanket Nest</strong>
     </td>
   </tr>
@@ -162,16 +162,17 @@ Editable AI files are created on first launch in:
 
 ## Repo Layout
 
+The current build uses art from `apps/`. The `art/` folder is legacy archive material and is not the source of truth for the desktop companion.
+
 ```text
 Gboy/
 ├── apps/
 │   ├── macos-companion/    # AppKit desktop companion app
-│   └── godot-game/         # Godot source project and base sprite sheets
-├── art/
-│   ├── raw-frames/         # Raw frame exports kept in the repo
-│   ├── reference/          # Reference images
-│   └── source-files/       # Source art files
-└── .github/workflows/      # Release automation
+│   └── godot-game/         # Godot source project and primary sprite sheets
+├── .github/
+│   ├── readme/             # Landing-page preview GIFs
+│   └── workflows/          # Release automation
+└── art/                    # Legacy archive, not used by the build
 ```
 
 ## Working On It
@@ -182,7 +183,7 @@ Important paths:
 - `apps/macos-companion/Sources/CompanionAI.swift`
 - `apps/macos-companion/Sources/ChatWindow.swift`
 - `apps/godot-game/assets/sprites/player/`
-- `art/raw-frames/`
+- `apps/macos-companion/Assets/Sprites/`
 
 To add a new animation:
 

@@ -142,7 +142,7 @@ This repo is set up so it can be published without machine-specific AI paths or 
 - local secrets should stay in environment variables
 - build output is ignored
 - `.DS_Store`, `.app`, and local override files are ignored
-- the repo layout is now stable for GitHub publishing under `apps/` and `art/`
+- the repo layout is now stable for GitHub publishing with current build assets under `apps/`
 
 ## Notes
 
