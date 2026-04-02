@@ -2,8 +2,6 @@
 
 Gboy is a native macOS desktop companion. He lives on your screen, reacts to the cursor, runs a large animation loop, and now ships from a cleaner repo layout that is easier to publish on GitHub and easier to build on any recent Mac.
 
-![Gboy preview](apps/godot-game/assets/sprites/player/gboy_preview.png)
-
 ## Links
 
 - [Neuki.wiki](https://neuko.wiki) for lore, transmissions, and worldbuilding
